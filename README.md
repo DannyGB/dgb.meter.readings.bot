@@ -1,4 +1,4 @@
-# 🦊 dgb.meter.notifications
+# 🦊 dgb.meter.readings.bot
 
 A playground for the Go language
 
@@ -10,14 +10,7 @@ A playground for the Go language
 
 Environment Variables:
 
-- METER_READINGS_SMTP_USERNAME
-- METER_READINGS_SMTP_PASSWORD
-- METER_READINGS_SMTP_HOST
-- METER_READINGS_SMTP_PORT
-- METER_READINGS_SMTP_FROM
-- METER_READINGS_RECIPIENTS
-- METER_READINGS_WEBSITE
-- METER_READINGS_SUBJECT
+
 
 # Usage
 

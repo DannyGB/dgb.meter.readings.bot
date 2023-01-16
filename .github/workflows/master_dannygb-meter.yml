@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy container app to Azure Web App - dannygb-meter-readings-bot
+name: Build and deploy container app to Azure Web App - dannygb-meter-bot
 
 on:
   push:
@@ -45,7 +45,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'dannygb-meter-readings-bot'
+        app-name: 'dannygb-meter-bot'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4bd4639fdf824d96ba2822553e05c4a1 }}
         images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ecfa127c3574c1f843e640edab73941 }}/meternotifications:${{ github.sha }}'
