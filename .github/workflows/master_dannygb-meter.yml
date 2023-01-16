@@ -48,4 +48,4 @@ jobs:
         app-name: 'dannygb-meter-bot'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4bd4639fdf824d96ba2822553e05c4a1 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ecfa127c3574c1f843e640edab73941 }}/meternotifications:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ecfa127c3574c1f843e640edab73941 }}/meterbot:${{ github.sha }}'
