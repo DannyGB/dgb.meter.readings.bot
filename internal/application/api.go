@@ -20,6 +20,7 @@ func HandleRequests(conf configuration.Configuration) chan int {
 
 	subRoute.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(200)
+		w.Header().Add("Content-Type", "application/json")
 		json.NewEncoder(w).Encode("OK")
 	}).Methods(http.MethodGet)
 
