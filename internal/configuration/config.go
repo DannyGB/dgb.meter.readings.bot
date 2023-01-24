@@ -29,7 +29,7 @@ func NewConfig() Configuration {
 	configuration.MONGO_CONNECTION = os.Getenv("METER_READINGS_MONGO_CONNECTION")
 	configuration.MONGO_COLLECTION = os.Getenv("METER_READINGS_MONGO_COLLECTION")
 	configuration.MONGO_DB = os.Getenv("METER_READINGS_MONGO_DB")
-	configuration.HTTP_PORT = os.Getenv("METER_READINGS_HTTP_PORT")
+	configuration.HTTP_PORT = os.Getenv("METER_READINGS_TELEGRAM_BOT_HTTP_PORT")
 
 	return *configuration
 }
